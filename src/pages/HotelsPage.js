@@ -43,7 +43,7 @@ function HotelsPage() {
           className="message"
           style={{ display: "flex", justifyContent: "center" }}
         >
-          The five star experience ⭐️⭐️⭐️⭐️⭐️
+          The five star experience ★★★★★
         </h1>
         <div className="card-organizer">
           <InfoCard text={"food"} />
