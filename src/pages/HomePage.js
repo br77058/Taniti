@@ -6,8 +6,11 @@ import Food from "../assets/images/food.png";
 import Hotels from "../assets/images/hotels.jpg";
 import Entertainment from "../assets/images/entertainment.jpg";
 import Transportation from "../assets/images/transportation.jpg";
+import { useNavigate } from "react-router-dom";
 
 function HomePage() {
+  const navigate = useNavigate();
+
   return (
     <div>
       <div className="image-container">
@@ -23,6 +26,7 @@ function HomePage() {
             border: "1px solid white",
             marginTop: "5rem",
           }}
+          onClick={() => navigate("/about")}
         >
           Learn More
         </Button>
@@ -42,21 +46,25 @@ function HomePage() {
             className="clickable"
             text={"food"}
             backgroundImage={Food}
+            onClick={() => navigate("/food")}
           />
           <InfoCard
             className={"clickable"}
             text={"hotels"}
             backgroundImage={Hotels}
+            onClick={() => navigate("/hotels")}
           />
           <InfoCard
             className={"clickable"}
             text={"entertainment"}
             backgroundImage={Entertainment}
+            onClick={() => navigate("/entertainment")}
           />
           <InfoCard
             className={"clickable"}
             text={"transportation"}
             backgroundImage={Transportation}
+            onClick={() => navigate("/transportation")}
           />
         </div>
       </div>

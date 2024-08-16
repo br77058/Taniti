@@ -89,12 +89,12 @@ h1.message {
 .card-organizer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
-  grid-template-rows: repeat(2, 1fr); /* Create 2 equal rows */
   gap: 40px; /* Space between the grid items */
   padding: 20px;
   width: 100%; /* Ensure the grid takes the full width of its container */
   max-width: 70vw; /* Adjust this value to control the width on larger screens */
   margin: 0 auto; /* Center the grid horizontally */
+  grid-auto-flow: dense; /* Automatically fill in rows without leaving gaps */
 }
 
 .info-card-container {

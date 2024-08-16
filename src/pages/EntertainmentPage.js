@@ -7,7 +7,10 @@ import "../styles/Entertainment.css";
 
 function EntertainmentPage() {
   const [showScroll, setShowScroll] = useState(true);
-
+  const musicParagraph =
+    "Attending concerts and music events in Taniti is a truly unique experience, blending world-class performances with the island’s stunning natural beauty. Artists from across the globe are drawn to Taniti’s vibrant music scene, performing in extraordinary venues that range from intimate beachfront stages to grand outdoor arenas nestled in the lush rainforest. Whether you’re swaying to the rhythms of a live band under a starlit sky or enjoying a classical concert with the sound of ocean waves in the background, each event offers a magical ambiance that only Taniti can provide. These music experiences not only showcase the talents of international artists but also highlight the island’s cultural fusion, creating unforgettable moments for music lovers.";
+  const festivalsParagraph =
+    "Taniti’s lively festivals are a vibrant celebration of the island’s rich culture and traditions, bringing together locals and visitors alike in a joyous display of music, dance, and art. These events are filled with colorful parades, traditional Tanitian dances, and live performances that echo the rhythms of the island’s ancestral heritage. Festivals such as the Harvest Moon Festival and the Ocean’s Blessing Ceremony showcase the deep connection between the people and their land, featuring rituals that honor the island’s natural bounty. Visitors can indulge in local delicacies, shop for handcrafted souvenirs, and experience the warmth and hospitality of the Tanitian people. These festivals are not just events; they are immersive experiences that offer a window into the heart and soul of Taniti’s beautiful culture.";
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -50,10 +53,16 @@ function EntertainmentPage() {
           Shows like you've never seen before
         </h1>
         <div className="card-organizer">
-          <InfoCard text={"food"} />
-          <InfoCard text={"hotels"} />
-          <InfoCard text={"entertainment"} />
-          <InfoCard text={"transportation"} />
+          <InfoCard
+            className={"article"}
+            paragraph={musicParagraph}
+            text={"Music"}
+          />
+          <InfoCard
+            className={"article"}
+            paragraph={festivalsParagraph}
+            text={"Festivals"}
+          />
         </div>
       </div>
     </div>

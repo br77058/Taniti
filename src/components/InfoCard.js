@@ -1,9 +1,12 @@
 import React from "react";
 import "../styles/InfoCard.css";
 
-const InfoCard = ({ text, backgroundImage, className, paragraph }) => {
+const InfoCard = ({ text, backgroundImage, className, paragraph, onClick }) => {
   return (
-    <div className={`info-card-container ${className ? className : ""}`}>
+    <div
+      onClick={onClick}
+      className={`info-card-container ${className ? className : ""}`}
+    >
       <div
         className="info-card-background"
         style={{ backgroundImage: `url(${backgroundImage})` }}

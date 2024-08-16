@@ -7,6 +7,8 @@ import "../styles/Entertainment.css";
 
 function TransportationPage() {
   const [showScroll, setShowScroll] = useState(true);
+  const taxiParagraph = `Taniti offers a convenient network of private transportation options, including traditional cabs and ride-sharing services like Uber and Lyft, making it easy for visitors to explore the island. Whether you’re traveling from your hotel to one of the island’s scenic beaches or heading to a local restaurant for dinner, these services provide reliable and comfortable transportation. With drivers who are knowledgeable about the island’s attractions and hidden gems, getting around Taniti is both hassle-free and enjoyable, allowing you to make the most of your time on the island.`;
+  const busParagraph = `Taniti’s reliable network of modern buses offers a convenient and comfortable way to explore the island. These buses, equipped with luxurious amenities like free Wi-Fi, ensure that you stay connected as you travel between the island’s attractions. Whether you’re heading to the vibrant markets of Taniti City or venturing out to the serene beaches and lush rainforests, the island’s bus system provides a stress-free transportation option. With regular routes and air-conditioned comfort, Taniti’s buses make it easy for visitors to experience all that the island has to offer without the need for a rental car.`;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,10 +52,16 @@ function TransportationPage() {
           The greatest public transit system of it's kind
         </h1>
         <div className="card-organizer">
-          <InfoCard text={"food"} />
-          <InfoCard text={"hotels"} />
-          <InfoCard text={"entertainment"} />
-          <InfoCard text={"transportation"} />
+          <InfoCard
+            className={"article"}
+            paragraph={taxiParagraph}
+            text={"Taxis"}
+          />
+          <InfoCard
+            className={"article"}
+            paragraph={busParagraph}
+            text={"Buses"}
+          />
         </div>
       </div>
     </div>
