@@ -7,6 +7,7 @@ import FoodPage from "./pages/FoodPage";
 import HotelsPage from "./pages/HotelsPage";
 import EntertainmentPage from "./pages/EntertainmentPage";
 import TransportationPage from "./pages/TransportationPage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             element={<TransportationPage />}
           ></Route>
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

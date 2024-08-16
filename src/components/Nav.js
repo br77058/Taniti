@@ -9,6 +9,7 @@ const Nav = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 1000);
 
   useEffect(() => {
+    // TODO: Make isMobile update automatically when window size changes.
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };

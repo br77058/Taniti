@@ -8,7 +8,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background: rgb(58, 81, 85);
+  background: linear-gradient(
+    158deg,
+    rgb(52, 120, 132) 0%,
+    rgb(224, 222, 197) 100%
+  );
 }
 
 .info-card-background {
@@ -30,7 +35,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.25); /* Darken the image with an overlay */
+  background-color: rgba(0, 0, 0, 0.118); /* Darken the image with an overlay */
   z-index: 1; /* Keep it behind the text */
   border-radius: 10px; /* Match the border-radius of the container */
 }
@@ -56,4 +61,23 @@
   .clickable:hover {
     transform: scale(1.05);
   }
+}
+
+.article {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: black;
+  padding-top: 2rem;
+  overflow-y: scroll;
+}
+
+.paragraph {
+  color: white;
+  margin-top: 1rem;
+  max-width: 80%;
+  font-size: large;
+  line-height: 1.5;
+  padding-bottom: 2rem;
 }
