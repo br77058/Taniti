@@ -4,110 +4,40 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="content">
+      <div className="footer-content">
         <div className="top">
           <div className="logo-details">
             <span className="logo_name">T A N I T I</span>
           </div>
           <div className="media-icons">
-            <a href="#">
+            <div className="dummy-link">
               <i className="fab fa-facebook-f"></i>
-            </a>
+            </div>
 
-            <a href="#">
+            <span className="dummy-link">
               <i className="fab fa-twitter"></i>
-            </a>
-            <a href="#">
+            </span>
+            <span className="dummy-link">
               <i className="fab fa-instagram"></i>
-            </a>
-            <a href="#">
+            </span>
+            <span className="dummy-link">
               <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
+            </span>
+            <span className="dummy-link">
               <i className="fab fa-youtube"></i>
-            </a>
+            </span>
           </div>
-        </div>
-        <div className="link-boxes">
-          <ul className="box">
-            <li className="link_name">Company</li>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="#">Contact us</a>
-            </li>
-            <li>
-              <a href="#">About us</a>
-            </li>
-            <li>
-              <a href="#">Get started</a>
-            </li>
-          </ul>
-          <ul className="box">
-            <li className="link_name">Services</li>
-            <li>
-              <a href="#">App design</a>
-            </li>
-            <li>
-              <a href="#">Web design</a>
-            </li>
-            <li>
-              <a href="#">Logo design</a>
-            </li>
-            <li>
-              <a href="#">Banner design</a>
-            </li>
-          </ul>
-          <ul className="box">
-            <li className="link_name">Account</li>
-            <li>
-              <a href="#">Profile</a>
-            </li>
-            <li>
-              <a href="#">My account</a>
-            </li>
-            <li>
-              <a href="#">Preferences</a>
-            </li>
-            <li>
-              <a href="#">Purchase</a>
-            </li>
-          </ul>
-          <ul className="box">
-            <li className="link_name">Courses</li>
-            <li>
-              <a href="#">HTML & CSS</a>
-            </li>
-            <li>
-              <a href="#">JavaScript</a>
-            </li>
-            <li>
-              <a href="#">Photography</a>
-            </li>
-            <li>
-              <a href="#">Photoshop</a>
-            </li>
-          </ul>
-          <ul className="box input-box">
-            <li className="link_name">Subscribe</li>
-            <li>
-              <input type="text" placeholder="Enter your email" />
-            </li>
-            <li>
-              <input type="button" value="Subscribe" />
-            </li>
-          </ul>
         </div>
       </div>
       <div className="bottom-details">
         <div className="bottom_text">
           <span className="copyright_text">
-            Copyright © 2024 <a href="#">Brandon Roque.</a> All rights reserved
+            Copyright © 2024 <span className="dummy-link">Brandon Roque.</span>{" "}
+            All rights reserved
           </span>
           <span className="policy_terms">
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms & condition</a>
+            <span className="dummy-link">Privacy policy</span>
+            <span className="dummy-link">Terms & condition</span>
           </span>
         </div>
       </div>
