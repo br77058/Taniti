@@ -13,7 +13,11 @@ const InfoCard = ({ text, backgroundImage, className, paragraph, onClick }) => {
       ></div>
       <div className="info-card-overlay"></div>
       <div className="info-card-content">{text}</div>
-      {paragraph && <div className="paragraph">{paragraph}</div>}
+      {paragraph && (
+        <div className="paragraph" style={{ whiteSpace: "pre-line" }}>
+          {paragraph}
+        </div>
+      )}
     </div>
   );
 };

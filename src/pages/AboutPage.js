@@ -8,7 +8,17 @@ function AboutPage() {
   const [showScroll, setShowScroll] = useState(true);
 
   const aboutParagraph =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+    "Welcome to Taniti, a hidden gem in the heart of the Pacific where adventure and relaxation await. With its pristine beaches, lush rainforests, and breathtaking volcanic landscapes, Taniti is a paradise for nature lovers and thrill-seekers alike. Immerse yourself in the island’s rich culture, where vibrant festivals, exotic cuisine, and warm hospitality create an unforgettable experience. Whether you’re exploring the vibrant coral reefs, hiking through verdant trails, or simply unwinding at a luxury resort, Taniti offers something for every traveler. Discover the beauty, charm, and endless possibilities that make Taniti more than just a destination—it’s an experience you’ll treasure forever.";
+
+  const faqText = `1. What is the best time to visit Taniti?
+    The best time to visit Taniti is during the dry season, from May to October, when the weather is sunny and pleasant, perfect for outdoor activities and beach relaxation.
+    
+    2. How do I get to Taniti?
+    Most visitors arrive by air via Taniti’s small airport, which accommodates both small jets and propeller planes. The island is also accessible by a cruise ship that docks once a week.
+    
+    3. What are the top attractions on the island?
+    Taniti’s top attractions include its pristine beaches, lush rainforests, the active volcano, snorkeling spots, and cultural festivals that showcase the island’s rich heritage.
+    `;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -54,15 +64,10 @@ function AboutPage() {
             text={"about"}
             paragraph={aboutParagraph}
           />
-          <InfoCard
-            className={"article"}
-            text={"FAQ"}
-            paragraph={aboutParagraph}
-          />
+          <InfoCard className={"article"} text={"FAQ"} paragraph={faqText} />
         </div>
       </div>
     </div>
   );
 }
-
 export default AboutPage;
